@@ -107,12 +107,12 @@ const btnCopy = document.querySelectorAll(".btnCopy");
 
 btnCopy.forEach(ele => {
   ele.addEventListener("click", () => {
-    navigator.clipboard.writeText(btnCopy.textContent);
+    let exactEle= ele.parentElement.parentElement.querySelector(".number");
+    navigator.clipboard.writeText(exactEle.textContent);
     copyCount++;
     let copyCountTag = document.querySelector(".text");
     copyCountTag.textContent = `${copyCount} Copy`;
   });
-
 });
 
 
