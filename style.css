@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hind Madurai", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+
+/* common style */
+.flexExtra{
+  align-items: center;
+  justify-content: space-between;
+}
+.flexExtra2 {
+  align-items: center;
+  justify-content: center;
+}
+/* header */
+nav{
+  background: #ffffff;
+  padding:1.5rem 0;
+  box-shadow: 0px 1px 50px rgba(181, 181, 181, 0.25);
+}
+.logoPart img {
+  height:3rem;
+}
+.logoPart .logoName {
+  color: #006747;
+}
+.navItems {
+  width:7.5rem;
+  height:3.25rem;
+  margin-left:.5rem;
+  background: rgba(65, 255, 107, 0.1);
+  border-radius:3rem;
+}
+.navItems.green {
+  background: #00A63E;
+  color: #ffffff;
+}
+.gap10{
+  gap:.5rem;
+}
+.icon{
+  font-size:2rem;
+}
+.icon1Color{
+  color:red;
+}
+.icon2Color{
+  color: #FCD227;
+}
+
+@media screen and (max-width:1200px){
+  html{
+    font-size:14px
+  }
+  .container{
+   padding:1.5rem 1rem;
+  }
+}
