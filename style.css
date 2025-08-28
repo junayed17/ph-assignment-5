@@ -46,7 +46,7 @@ nav {
 .navItems {
   /* width: 7.5rem;
   height: 3.25rem; */
-  padding: 14px 24px;
+  padding: 1rem 1.5rem;
   margin-left: 0.5rem;
   background: rgba(65, 255, 107, 0.1);
   border-radius: 3rem;
@@ -60,6 +60,15 @@ nav {
 }
 .icon {
   font-size: 2rem;
+}
+.fa-regular.fa-heart{
+  transition: .3s;
+}
+.fa-regular.fa-heart:hover{
+  color: red;
+}
+.fa-regular.fa-heart:active{
+  color:black;
 }
 .icon1Color {
   color: red;
@@ -173,7 +182,7 @@ nav {
   color: white;
 }
 
-.history {
+.history{
   background: #ffffff;
   padding: 1.5rem;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
@@ -194,11 +203,39 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2rem;
+  gap: 1rem;
 }
 .headeingGroup{
   font-size: 1.25rem;
   color: black;
 }
+/* history part */
+.histo{
+background: #FAFAFA;
+border-radius: .5rem;
+margin-bottom: .5rem;
+padding: 1rem;
+}
+.histo h2{
+  color: black;
+  font-size: 1.25rem;
+}
+.histo p{
+  color: gray;
+    font-size: 1.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 14px;
@@ -260,3 +297,12 @@ nav {
     padding: 1rem 5rem;
   }
 }
+
+
+
+
+
+
+
+
+
