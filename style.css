@@ -176,6 +176,10 @@ nav {
 }
 .btnCopy {
   color: gray;
+  transition: .3s;
+}
+.btnCopy:active{
+  background: #006747;
 }
 .btnCall {
   background: green;

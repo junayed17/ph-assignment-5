@@ -98,3 +98,21 @@ document.addEventListener("click", (e) => {
     console.log("History cleared");
   }
 });
+
+
+// copy partt
+let copyCount=0;
+const btnCopy = document.querySelectorAll(".btnCopy");
+
+
+btnCopy.forEach(ele => {
+  ele.addEventListener("click", () => {
+    navigator.clipboard.writeText(btnCopy.textContent);
+    copyCount++;
+    let copyCountTag = document.querySelector(".text");
+    copyCountTag.textContent = `${copyCount} Copy`;
+  });
+
+});
+
+
