@@ -16,13 +16,14 @@ img {
 .container {
   max-width: 1800px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 .flex {
   display: flex;
 }
 
 /* common style */
-.flexExtra{
+.flexExtra {
   align-items: center;
   justify-content: space-between;
 }
@@ -31,46 +32,87 @@ img {
   justify-content: center;
 }
 /* header */
-nav{
+nav {
   background: #ffffff;
-  padding:1.5rem 0;
+  padding: 1.5rem 0;
   box-shadow: 0px 1px 50px rgba(181, 181, 181, 0.25);
 }
 .logoPart img {
-  height:3rem;
+  height: 3rem;
 }
 .logoPart .logoName {
   color: #006747;
 }
 .navItems {
-  width:7.5rem;
-  height:3.25rem;
-  margin-left:.5rem;
+  /* width: 7.5rem;
+  height: 3.25rem; */
+  padding: 14px 24px;
+  margin-left: 0.5rem;
   background: rgba(65, 255, 107, 0.1);
-  border-radius:3rem;
+  border-radius: 3rem;
 }
 .navItems.green {
-  background: #00A63E;
+  background: #00a63e;
   color: #ffffff;
 }
-.gap10{
-  gap:.5rem;
+.gap10 {
+  gap: 0.5rem;
 }
-.icon{
-  font-size:2rem;
+.icon {
+  font-size: 2rem;
 }
-.icon1Color{
-  color:red;
+.icon1Color {
+  color: red;
 }
-.icon2Color{
-  color: #FCD227;
+.icon2Color {
+  color: #fcd227;
+}
+/* bannerSection */
+.bannerSection {
+  background: linear-gradient(90deg, #013223 0%, #006747 49.99%, #013223 100%);
+  color: #ffffff;
+}
+.flexClass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  width:5.5rem;
+  height: 5.5rem;
+  margin-top: 21px;
+}
+.heading{
+  margin: .75rem 0;
+  font-size:2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.description{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-@media screen and (max-width:1200px){
-  html{
-    font-size:14px
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
   }
-  .container{
-   padding:1.5rem 1rem;
+  .container {
+    padding: 1.5rem 1rem;
   }
+}
+@media screen and (max-width:600px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    padding: 1.5rem 1rem;
+  }
+  nav {
+  padding: 1.3rem 0;
+}
 }
