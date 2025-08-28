@@ -90,3 +90,11 @@ function historyCreator(arr) {
 historyCreator(callHistoryArr);
 
 
+// clear part
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("clear")) {
+    callHistoryArr = [];
+    historyCreator(callHistoryArr);
+    console.log("History cleared");
+  }
+});
