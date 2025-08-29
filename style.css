@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -233,7 +234,11 @@ padding: 1rem;
 
 
 
-
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
+}
 
 
 
@@ -242,7 +247,7 @@ padding: 1rem;
 
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 14px;
+    font-size: 13px;
   }
   .container {
     padding: 1.5rem 1rem;
@@ -262,13 +267,17 @@ padding: 1rem;
 @media screen and (max-width: 1000px) {
   .gridMain {
     gap: 0.5rem;
+    grid-template-columns:3fr;
   }
   .card {
     padding: 1rem;
   }
   .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
+  }
+    .btn {
+    padding: 1rem 2rem;
   }
 }
 @media screen and (max-width: 769px) {
@@ -304,9 +313,9 @@ padding: 1rem;
 
 
 
-
-
-
-
-
-
+.serviceDetails{
+  height: 6rem;
+}
+body{
+  padding-bottom: 100vh;
+}
