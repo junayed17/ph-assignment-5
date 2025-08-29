@@ -30,10 +30,12 @@ callbtn.forEach((element) => {
     const serviceNumber =
       element.parentElement.parentElement.querySelector(".number").textContent;
     if (totalStar < 20) {
-      alert("You Have Not Enough Star");
+      alert(
+        "You don’t have enough coins. A call requires 20 coins."
+      );
       return;
     }
-    alert(`${serviceName}\nservice number:${serviceNumber}`);
+    alert(`📞Calling ${serviceName} ${serviceNumber}...`);
     totalStar -= 20;
     remainingStar.textContent = totalStar;
 
@@ -108,7 +110,11 @@ const btnCopy = document.querySelectorAll(".btnCopy");
 btnCopy.forEach(ele => {
   ele.addEventListener("click", () => {
     let exactEle= ele.parentElement.parentElement.querySelector(".number");
-    navigator.clipboard.writeText(exactEle.textContent);
+      navigator.clipboard
+      .writeText(exactEle.textContent)
+      .then(() => {
+        alert(`The number ${exactEle.textContent} has been copied.`);
+      });
     copyCount++;
     let copyCountTag = document.querySelector(".text");
     copyCountTag.textContent = `${copyCount} Copy`;

@@ -242,6 +242,9 @@ padding: 1rem;
   html {
     font-size: 14px;
   }
+  .btn {
+    padding: .5rem 1.75rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -253,11 +256,11 @@ padding: 1rem;
   }
   .gridMain {
     grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+    gap:1rem;
   }
   .cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
   }
   .btn {
     padding: 1rem 2rem;
@@ -273,7 +276,7 @@ padding: 1rem;
   }
   .cards {
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
+    gap: 1rem;
   }
     .btn {
     padding: 1rem 2rem;
