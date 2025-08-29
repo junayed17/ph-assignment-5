@@ -113,9 +113,11 @@ btnCopy.forEach(ele => {
       navigator.clipboard
       .writeText(exactEle.textContent)
       .then(() => {
-        alert(`The number ${exactEle.textContent} has been copied.`);
+        alert(`The Hotline number ${exactEle.textContent} has been copied.`);
       });
+      
     copyCount++;
+    console.log(copyCount)
     let copyCountTag = document.querySelector(".text");
     copyCountTag.textContent = `${copyCount} Copy`;
   });
