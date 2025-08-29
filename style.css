@@ -142,6 +142,10 @@ nav {
   color: gray;
   cursor: pointer;
 }
+
+.serviceDetails{
+  height: 6rem;
+}
 .serviceName {
   font-size: 1.5rem;
   font-weight: 600;
@@ -240,11 +244,6 @@ padding: 1rem;
   }
 }
 
-
-
-
-
-
 @media screen and (max-width: 1200px) {
   html {
     font-size: 13px;
@@ -311,11 +310,11 @@ padding: 1rem;
   }
 }
 
-
-
-.serviceDetails{
-  height: 6rem;
-}
-body{
-  padding-bottom: 100vh;
+@media screen and (max-width:365px) {
+  .flexDC{
+    flex-direction: column;
+  }
+  .navItems{
+    margin:1.5rem;
+  }
 }
