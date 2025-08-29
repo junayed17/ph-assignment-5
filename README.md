@@ -76,7 +76,7 @@ document.querySelector(".parent").addEventListener("click", (e) => {
 
 
 
-It is useful because we can access all elements with one event listener. So we don’t need to write more code, and it is easy to find a specific element
+It is useful because we can access all elements those have same given selector with one eventlistener. So we don’t need to write more code, and it is easy to find a specific element
 
 5.What is the difference between preventDefault() and stopPropagation() methods?
 
