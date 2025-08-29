@@ -57,7 +57,7 @@ function time(){
   let hourIn12=hour%12;
   let min=date.getMinutes();
   let second=date.getSeconds();
-  return `${hourIn12}:${min}:${second}${ampm}`
+  return `${hourIn12>9?hourIn12:`0${hourIn12}`}:${min>9?min:`0${min}`}:${second>9?second:`0${second}`}${ampm}`
 }
 
 function historyCreator(arr) {
